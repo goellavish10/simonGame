@@ -102,6 +102,12 @@ body {
  .mobile-screen{
    display: block;
  }
+ .endlevel{
+  width: 100%;
+  position: relative;
+  visibility: hidden;
+}
+
 
 }
 
@@ -115,5 +121,10 @@ body {
   }
   #btnMobile{
     padding: 20px;
+  }
+  .endlevel{
+    width: 100%;
+    position: relative;
+    visibility: hidden;
   }
 }
