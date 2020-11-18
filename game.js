@@ -13,6 +13,8 @@ if (window.matchMedia("(max-width: 800px)").matches) {
                 $("#level-title").text("Level " + level);
         
                 started = true;
+        $(".endlevel").css("visibility", "hidden");
+
             }
         });
     
@@ -23,6 +25,8 @@ if (window.matchMedia("(max-width: 800px)").matches) {
             $("#level-title").text("Level " + level);
     
             started = true;
+        $(".endlevel").css("visibility", "hidden");
+
         }
     });
 }
@@ -57,6 +61,8 @@ function checkAnswer(currentLevel){
         playSound("wrong");
         $("h1").text("Game Over, Press Any Key to Restart");
         $("body").addClass("game-over");
+        $(".endlevel").css("visibility", "visible");
+        $("h2").text("You lost at level: " + level) 
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 500);
